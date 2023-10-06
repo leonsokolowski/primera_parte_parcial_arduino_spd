@@ -1,5 +1,5 @@
 # Primera parte parcial arduino
-![Logo arduino](ArduinoTinkercad.jpg)
+![Logo arduino]([ArduinoTinkercad.jpg](https://github.com/Estebamq/EjemploDocumentacion/raw/main/img/ArduinoTinkercad.jpg))
 ## Integrantes:
 * León Sokolowski
 
