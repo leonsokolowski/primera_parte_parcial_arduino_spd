@@ -8,7 +8,7 @@
 * Matías Zunini
 
 ## 💾Proyecto Tinkercad:
-![Imagen](tpspd.png)
+![Imagen]([tpspd.png](https://cdn.discordapp.com/attachments/1135765368091189298/1159964003162935358/tpspd.png?ex=6532efa9&is=65207aa9&hm=d0b18653ef4ef5333b13d4cf7e5a91f286fb476931c05d7cf8644e5762f41a53&))
 
 ## [Contador de 0 a 99 con Display 7 Segmentos 👌](https://www.tinkercad.com/things/gtrNZ25SJ6C-stunning-snicket-bruticus/editel?sharecode=ngabwr7mSPKAcHE1rzQirIVSepD4qL_jp-wnj3otTP0 "Nuestro Proyecto😊")
 
