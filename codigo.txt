@@ -8,7 +8,7 @@
 #define pulsador_mas 13
 #define pulsador_menos 12
 #define pulsador_reset 11
-#define DisplayOn 25
+#define DisplayOn 10
 #define decena A4
 #define unidad A5
 #define Apagados 1
@@ -66,14 +66,11 @@ void loop()
     }
     Serial.println(countDigit);
     printCount(countDigit);
-  delay(10);
+  delay(25);
 }
 
 void printDigit(int digit)
 {
-  //Recibe el numero que se deberia mostrar en pantalla
-  //Apaga todos los Led's, y prende los necesarios para c/N°
-  //No devuelve nada
     digitalWrite(A, LOW);
     digitalWrite(B, LOW);
     digitalWrite(C, LOW);
@@ -157,47 +154,48 @@ void printDigit(int digit)
 
 void prendeDigito(int digito)
 {
-  //Recibe el numero que se deberia mostrar en pantalla
-  //Apaga los display, y prende con el numero en su valor posicional
-  //No devuelve nada
-    digitalWrite(unidad, HIGH);
-    digitalWrite(decena, HIGH);
 
     if (digito == unidad)
     {
-        digitalWrite(unidad, HIGH);
-      	digitalWrite(decena, LOW);
-      delay(85);
+        digitalWrite(unidad, LOW);
+      	digitalWrite(decena, HIGH);
+      	delay(DisplayOn);
     }
     else if (digito == decena)
     {
-        digitalWrite(decena, HIGH);
-      	digitalWrite(unidad, LOW);
-     delay(85);
+        digitalWrite(decena, LOW);
+      	digitalWrite(unidad, HIGH);
+     	delay(DisplayOn);
+    }
+  	else
+    {	
+    	digitalWrite(decena, HIGH);
+      	digitalWrite(unidad, HIGH);
     }
   	
 }
 
 void printCount(int count)
 {
-  //Recibe un numero
-  //Lo transforma a unidad o decena
-  //No devuelve nada
     int DECENA = count / 10;
     int UNIDAD = count % 10;
-
-    prendeDigito(decena);
-    printDigit(DECENA);
-  	
-    prendeDigito(unidad);
+	
+  	prendeDigito(Apagados);
+  	printDigit(DECENA);  
+  	prendeDigito(decena);
+    
+  
+  	prendeDigito(Apagados);
+  
     printDigit(UNIDAD);
+  	prendeDigito(unidad);
+    
+  	
+  	//Serial.println(UNIDAD);
 }
 
 int KeyPressed(void)
 {
-  //No recibe nada
-  //Evalua cual boton fue pulsado
-  //Devuelve una respuesta dependiendo el boton
     int suma = digitalRead(pulsador_mas);
     int resta = digitalRead(pulsador_menos);
     int reset = digitalRead(pulsador_reset);
