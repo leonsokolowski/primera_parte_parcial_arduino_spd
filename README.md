@@ -15,6 +15,19 @@
 ## Descripción:
 Esta placa *Arduino* está programada para mostrar, mediante 2 displays de 7 segmentos y el método de multiplexación, un **contador de 00 a 99**. Para modificar el contador cuenta con **3 pulsadores**, uno para sumar 1 dígito, otro para restar 1 dígito y un tercero para volver al contador a 00.
 
-## Fuente:
+### Funciones:
+#### » printDigit:
+>Recibe el numero que se deberia mostrar en pantalla. Apaga todos los Led's, y prende los necesarios para c/N°. No devuelve nada
+
+#### » prendeDigito:
+>Recibe el numero que se deberia mostrar en pantalla. Apaga los display, y prende con el numero en su valor posicional. No devuelve nada
+
+#### » printCount:
+>Recibe un numero. Lo transforma a unidad o decena. No devuelve nada
+
+#### » KeyPressed:
+>No recibe nada. Evalua cual boton fue pulsado y que mantener apretado el botón no sume o reste reiteradas veces. Devuelve una respuesta dependiendo el boton
+
+## » Fuente:
 
 [SPD clase 4](https://www.youtube.com/watch?v=_Ry7mtURGDE&list=PL7LaR6_A2-E11BQXtypHMgWrSR-XOCeyD&index=5&ab_channel=UTNFRA)
