@@ -60,3 +60,11 @@ Esta placa *Arduino* está programada para mostrar o bien, un **contador de 00 a
 
 ## Descripción
 Esta placa *Arduino* está programada para mostrar o bien, un **contador de 00 a 99**, o un **contador de número primos**. Para realizar esta tarea se vale de un **Interruptor Deslizante**. Para modificar los contadores cuenta con **3 pulsadores**, uno para sumar, otro para restar y un tercero para volver al contador a 00. Además está conectada a un **Sensor de fuerza** que mide de 0 a 10 Newtons. Gracias a que la resistencia esta en 128 Ω muestra un numero del 00 al 99 dependiendo de la cantidad de Newtons que detecte. Si no detecta Newtons, funciona el código anterior.
+
+# Tercera parte parcial arduino
+![Imagen](https://media.discordapp.net/attachments/1134581114934136892/1165071767015006238/image.png?ex=654584a3&is=65330fa3&hm=718f711b9ffd3201f45155a5e557fd36d089d29efa65099733ddda256a099e38&=&width=862&height=420)
+
+##[Interruptor Deslizante elige entre Contador de 0 a 99 y Números Primos con Sensor de Fuerza integrado y fotorresistencia 👌](https://www.tinkercad.com/things/lAWob1mldcS "Nuestro Proyecto😊")
+
+## Descripción
+Esta placa *Arduino* está programada para mostrar o bien, un **contador de 00 a 99**, o un **contador de número primos**. Para realizar esta tarea se vale de un **Interruptor Deslizante**. Para modificar los contadores cuenta con **3 pulsadores**, uno para sumar, otro para restar y un tercero para volver al contador a 00. Además está conectada a un **Sensor de fuerza** que mide de 0 a 10 Newtons. Gracias a que la resistencia esta en 128 Ω muestra un numero del 00 al 99 dependiendo de la cantidad de Newtons que detecte. Si no detecta Newtons, funciona el código anterior. Además, mediante el uso de una fotorresistencia y un Led simula el día y la noche siempre y cuando el contador de 00 a 99 sea igual o mayor que 35 y que la **fotorresistencia** detecte que está a la mitad o más de su sensibilidad.
