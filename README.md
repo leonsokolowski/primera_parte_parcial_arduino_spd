@@ -54,3 +54,9 @@ Esta placa *Arduino* está programada para mostrar o bien, un **contador de 00 a
 ![Imagen](https://media.discordapp.net/attachments/1134581114934136892/1165010205193539685/image.png?ex=65454b4d&is=6532d64d&hm=3b225e461089f9181603b6f00a2e52adc3d4097fb4546943f3e0193dc08c0f53&=&width=1423&height=676)
 
 >El motor de CC (corriente continua), tiene la capacidad de generar energía mecánica de manera giratoria, gracias a una energía eléctrica. nosotros implementaríamos el motor de una manera que este tenga diferente dirección dependiendo un segundo switch haciendo que cambie la dirección en la que rota este, con los botones aumentaríamos o disminuiríamos la velocidad del motor,  la misma estaría dividida de una manera sencilla: (0-9) 10%, (10-19) 20%, etc... , con el display de 7 segmentos veríamos cual seria la velocidad actual.
+
+## [Punto 3. Sensor de fuerza integrado 👌](https://www.tinkercad.com/things/1SZODqVE3e5-copy-of-parcial-spd-parte-2/editel?sharecode=eZVIWxGrSvyQJ190PpIykL3CGXaB3nifWvqpYovs5QY "Nuestro Proyecto😊")0
+![Imagen](https://media.discordapp.net/attachments/1134581114934136892/1165027598120796240/image.png?ex=65455b80&is=6532e680&hm=0ba9eccf3526dc3cea3834ac0dbee70246172ed1d76327d7bf9d08eba4bb0123&=&width=1371&height=676)
+
+## Descripción
+Esta placa *Arduino* está programada para mostrar o bien, un **contador de 00 a 99**, o un **contador de número primos**. Para realizar esta tarea se vale de un **Interruptor Deslizante**. Para modificar los contadores cuenta con **3 pulsadores**, uno para sumar, otro para restar y un tercero para volver al contador a 00. Además está conectada a un **Sensor de fuerza** que mide de 0 a 10 Newtons. Gracias a que la resistencia esta en 128 Ω muestra un numero del 00 al 99 dependiendo de la cantidad de Newtons que detecte. Si no detecta Newtons, funciona el código anterior.
